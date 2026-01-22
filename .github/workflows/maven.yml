@@ -34,7 +34,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: [aws-ec2]
+    runs-on: [ip-172-31-14-42]
     steps:
       - name: pull Image from docker hub
         run: docker pull mithula23/learngithubactions
