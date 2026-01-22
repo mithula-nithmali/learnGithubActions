@@ -41,5 +41,6 @@ jobs:
       - name: delete old container
         run: docker rm -f learngithubactions-container
       - name: Run docker container
-        run: docker run -d -p 8080:8080 learngithubactions-container mithula23/learngithubactions
+        run: docker run -d -p 8080:8080 --name learngithubactions-container mithula23/learngithubactions:latest
+
 
